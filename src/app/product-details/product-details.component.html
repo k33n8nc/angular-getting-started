@@ -1,0 +1,10 @@
+<h2 class="my-2 font-bold">Product Details</h2>
+
+<div *ngIf="product" class="bg-gray-100 p-4 rounded">
+  <h3 class="font-bold">{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <div class="mt-4 flex items-center justify-between">
+    <h4 class="first-letter:mr-1">{{ product.price | currency: 'EUR' }}</h4>
+    <button (click)="addToCart(product)">Buy</button>
+  </div>
+</div>

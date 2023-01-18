@@ -1,0 +1,6 @@
+span {
+    display: inline-block;
+    &::first-letter {
+        padding-right: 0.25rem;
+    }
+}
